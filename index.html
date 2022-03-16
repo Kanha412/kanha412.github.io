@@ -1,271 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="image/fav.png">
-    <title>Kanha Gupta</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!--Montserrat font-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/feather-icons"></script>
-  </head>
-  <body>   
-    <section>
-      <!-- MOBILE NAVIGATION -->
-      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
-        <a href="#home" class="w3-bar-item w3-button w3-hover-none">Get Started</a>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="image/fav.png">
+  <title>Kanha Gupta</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!--Montserrat font-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+  <section>
+    <!-- MOBILE NAVIGATION -->
+    <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+      <a href="#home" class="w3-bar-item w3-button w3-hover-none">Get Started</a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+        onclick="toggleNavigation()">&#9776;</a>
+    </div>
+    <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+      <a href="#about"
+        class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green"
+        onclick="toggleNavigation()">ABOUT</a>
+      <a href="#resume"
+        class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green"
+        onclick="toggleNavigation()">RESUME</a>
+      <a href="#achieve"
+        class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green"
+        onclick="toggleNavigation()">ACHIEVEMENTS</a>
+      <a href="#contact"
+        class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green">CONTACT</a>
+    </div>
+
+    <!-- SOCIAL SECTION -->
+    <section class="image-section w3-quarter w3-fixed w3-padding-small">
+      <!--IMAGE/AVATAR-->
+      <img src="image/avatar.jpg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;" />
+      <!--SOCIAL NETWORK BUTTONS-->
+      <div class="links w3-margin-top w3-padding-small">
+        <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://github.com/Kanha412" target="_blank">
+          <i class="fa-brands fa-github fa-2xl"></i>
+        </a>
+        <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.instagram.com/kanhagupta412/"
+          target="_blank">
+          <i class="fa-brands fa-instagram fa-2xl"></i>
+        </a>
+        <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.hackerrank.com/kanhagupta412"
+          target="_blank">
+          <i class="fa-brands fa-hackerrank fa-2xl"></i>
+        </a>
+        <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://success-ingredients.blogspot.com/"
+          target="_blank">
+          <i class="fa-brands fa-blogger fa-2xl"></i>
+        </a>
       </div>
-      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
-        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
-        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUME</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green">CONTACT</a>
+      <!--CV DOWNLOAD BUTTON-->
+      <div class="w3-container w3-padding-16">
+        <a href="https://drive.google.com/file/d/1K6TRpVohDz8B2zXXg-eP986TWOxdz_mE/view?usp=sharing"
+          class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank"
+          download>
+          <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+          <span class="w3-margin-left download-text">DOWNLOAD RESUME</span>
+        </a>
       </div>
-
-      <!-- SOCIAL SECTION -->
-      <section class="image-section w3-quarter w3-fixed w3-padding-small">
-        <!--IMAGE/AVATAR-->
-        <img src="image/avatar.jpg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
-        <!--SCIAL NETWORK BUTTONS-->
-        <div class="links w3-margin-top w3-padding-small">
-            <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://github.com/Kanha412" target="_blank">
-                <i class="fa-brands fa-github fa-2xl"></i>
-              </a>
-              <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.instagram.com/kanhagupta412/" target="_blank">
-                <i class="fa-brands fa-instagram fa-2xl"></i>
-              </a>
-              <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.hackerrank.com/kanhagupta412" target="_blank">
-                <i class="fa-brands fa-hackerrank fa-2xl"></i>
-              </a>
-              <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://success-ingredients.blogspot.com/" target="_blank">
-                <i class="fa-brands fa-blogger fa-2xl"></i>
-              </a>
-        </div>
-        <!--CV DOWNLOAD BUTTON-->
-        <!-- <div class="w3-container w3-padding-16">
-          <a href="./resume.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
-            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
-            <span class="w3-margin-left download-text">DOWNLOAD CV</span>
-          </a>
-        </div> -->
-      </section>
-
-      <!--CV CONTENT SECTION-->
-      <section class="w3-threequarter w3-padding-large w3-right">
-        <!--DESKTOP NAVIGATION-->
-        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
-          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">Get Started</a>
-          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
-          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
-          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
-        </div>
-        <div class="content-container w3-margin-top-2">
-          <!--HOME SECTION-->
-          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
-            <p style="font-style: italic; font-size:x-large;">"Be who you are and say what you feel, because those who mind don’t matter, and those who matter don’t mind."</p>
-            <h1>Kanha Gupta</h1>
-            <h2 class="college">B.Tech Student (CSE)</h2>
-            <h2 class="college">JNCT College, Bhopal</h2>
-            <p></p>
-          </div>
-
-          <!--ABOUT SECTION-->
-          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
-            <p class="w3-margin-top-2"> 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-               Nam porttitor sollicitudin efficitur. 
-               Integer posuere odio vel ullamcorper euismod. 
-               Aliquam sit amet nulla tortor. 
-               Integer vehicula nunc et condimentum feugiat. 
-               Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
-            </p>
-            <p class=""> 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-               Nam porttitor sollicitudin efficitur. 
-               Integer posuere odio vel ullamcorper euismod. 
-               Aliquam sit amet nulla tortor. 
-               Integer vehicula nunc et condimentum feugiat. 
-               Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
-            </p>
-            <p class=""> 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-               Nam porttitor sollicitudin efficitur. 
-               Integer posuere odio vel ullamcorper euismod. 
-               Aliquam sit amet nulla tortor. 
-               Integer vehicula nunc et condimentum feugiat. 
-               Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
-            </p>
-          </div>
-
-          <!--RESUME-->
-          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
-            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
-            <div class="w3-container w3-margin-top-2 w3-cursive">
-
-              <!--EMPLOYMENT HISTORY SECTION-->
-              <h3 class="w3-border-amber">MY EMPLOYMENT HISTORY</h3>
-              <div class="">
-                <h4 class="mt-4">Community Manager at the Company-X</h4>
-                <p>September 2020 - Present</p>
-                <ul class="w3-ul" style="font-weight: 500;">
-                  <li>Ensured that published content meets brand guidelines and overall communication styles</li>
-                  <li>Built relations with the online community</li>
-                  <li>Implemented social media strategies to increase engagement and followers</li>
-                </ul>
-              </div>
-              <div class="">
-                <h4 class="mt-4">Social Community Manager at the Company-Y</h4>
-                <p>January 2017 - June 2020 </p>
-                <ul class="w3-ul" style="font-weight: 500;">
-                  <li>Ensured that audience growth rate is in increase through social networs</li>
-                  <li>Managed social media campaigns for various social media platforms to align with marketing strategies</li>
-                  <li>Monitored and provided feedback on engagement/conversation via social media channels to leadership</li>
-                </ul>
-              </div>
-              <div class="">
-                <h4 class="mt-4">Social Community Manager at the Company-Z</h4>
-                <p>January 2014 - April 2016 </p>
-                <ul class="w3-ul" style="font-weight: 500;">
-                  <li>Organized and managed community events to boost brand awareness</li>
-                  <li>Monitored, tracked and reported on feedback and online reviews</li>
-                  <li>Provided engaging text, image and video content for all social media and professional accounts</li>
-                </ul>
-              </div>
-            </div>
-
-            <!---EDUCATION SECTION-->
-            <div class="w3-container w3-margin-top-2 w3-cursive">
-              <h3 class="w3-border-amber">MY EDUCATION</h3>
-                <h4 class="mt-4">B.Tech (CSE), JNCT College, Bhopal</h4>
-                <p>June 2020 - Present </p>
-                <h4>High Schooling (Maths-Science Stream), Saint Paul's Sr. Sec. School (CBSE), Katni</h4>
-                <p>April 2018 - May 2020 </p>
-                <h4>Secondary Schooling, Saint Paul's Sr. Sec. School (CBSE), Katni</h4>
-                <p>April 2016 - March 2018 </p>
-                <h4>Primary Education, Champions School, Katni</h4>
-                <p>April 2006 - March 2013 </p>
-            </div>
-
-            <!--SKILLS SECTION-->
-            <div class="w3-container w3-margin-top-2 w3-cursive">
-              <h3 class="w3-border-amber">MY SKILLS</h3>
-              <!--SOFT SKILLS-->
-              <h4 class="mt-4">Soft skills</h4>
-              <ul class="w3-ul" style="font-weight: 500;">
-                <li>I have excelent communication skill and confidence in front of an audience</li>
-                <li>I have a talent for investigating and researching different processes to offer different improvements and solution for the benefit of the organization </li>
-                <li>Provided engaging text, image and video content for all social media and professional accounts</li>
-              </ul>
-              <!--TECHNICAL SKILLS-->
-              <h4 class="mt-4">Technical skills</h4>
-                <ul class="w3-ul" style="font-weight: 500;">
-                  <li>I have a great experience with MS Office tools</li>
-                  <li>I am proficient in technical writing</li>
-                  <li>Provided engaging text, image and video content for all social media and professional accounts</li>
-                </ul>
-            </div>
-
-            <!--INTERESTS SECTION-->
-            <div class="w3-container w3-margin-top-2 w3-cursive">
-              <h3 class="w3-border-amber">MY HOBBIES AND INTERESTS</h3>
-                <ul class="w3-ul" style="font-weight: 500;">
-                  <li>I love mountain hiking and cycling in my free time</li>
-                  <li>I like to play board games with other people</li>
-                </ul>
-            </div>
-
-            <!--REFERENCE SECTION-->
-            <div class="w3-container w3-margin-top-2 w3-cursive">
-              <h3 class="w3-border-amber">MY REFERENCES</h3>
-              <h4 class="mt-4">Jane Doe, CEO at Company-Z</h4>
-              <ul class="w3-ul" style="font-weight: 500;">
-                <li>+0123456789</li>
-                <li>janedoe@companyz.com</li>
-              </ul>
-              <h4 class="mt-4">Margaret Johnson, Manager at Company-Y</h4>
-              <ul class="w3-ul" style="font-weight: 500;">
-                <li>+9876543210</li>
-                <li>mjohnson@companyy.com</li>
-              </ul>
-            </div>            
-          </div>
-
-          <!--CONTACT SECTION-->
-          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
-            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h2>
-            <div class="w3-margin-top-2" style="font-weight: 500;">
-              <p>Name: Kanha Gupta</p>
-              <p>Address (Hometown): Katni, MP, 483501</p>
-              <p>Address (Now): Indrapuri, Bhopal, MP, 462022</p>
-              <p>E-mail: kanhagupta412@gmail.com</p>
-            </div>
-          </div>
-          <hr>
-          <form action="https://formspree.io/f/mknyokgb" method="POST">
-            <h4 class="my-4 mx-auto" style="width: 146px; color: rgb(15, 0, 224); text-decoration: underline;">Get In Touch</h3>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Email address</label>
-              <input type="email" name="email" required class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
-              <textarea class="form-control" name="message" required id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-              <label class="form-check-label" for="exampleCheck1">I'm Not A Robot</label>
-            </div>          
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-
-        <!--FOOTER-->
-        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
-          <p>© 2022 - Kanha Gupta</p>
-        <!-- End footer -->
-        </footer>
-        <div class="contain mt-0">
-          <div class="links w3-padding-small mt-0">
-            <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://github.com/Kanha412" target="_blank">
-              <i class="fa-brands fa-github fa-xl" style="color: black;" onMouseOver="this.style.color='#ed7b00'" onMouseOut="this.style.color='black'"></i>
-            </a>
-            <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.instagram.com/kanhagupta412/" target="_blank">
-              <i class="fa-brands fa-instagram fa-xl" style="color: black;" onMouseOver="this.style.color='#ed7b00'" onMouseOut="this.style.color='black'"></i>
-            </a>
-            <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.hackerrank.com/kanhagupta412" target="_blank">
-              <i class="fa-brands fa-hackerrank fa-xl" style="color: black;" onMouseOver="this.style.color='#ed7b00'" onMouseOut="this.style.color='black'"></i>
-            </a>
-            <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://success-ingredients.blogspot.com/" target="_blank">
-              <i class="fa-brands fa-blogger fa-xl" style="color: black" onMouseOver="this.style.color='#ed7b00'" onMouseOut="this.style.color='black'"></i>
-            </a>
-      </div>
-      </div>
-        <!--END OF CV SECTION-->
-      </section>      
     </section>
 
-    <script>
-      // Function to toggle mobile navigation
-      function toggleNavigation() {
-        let nav = document.getElementById("mobile-nav");
-        if (nav.classList.contains('w3-show')) {
-          nav.classList.remove('w3-show');
-        } else { 
-          nav.classList.add('w3-show');
-        }
+    <!--CV CONTENT SECTION-->
+    <section class="w3-threequarter w3-padding-large w3-right">
+      <!--DESKTOP NAVIGATION-->
+      <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+        <a href="#achieve"
+          class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
+          style="border-width: 2px !important;" onclick="toggleNavigation()">ACHIEVEMENTS</a>
+        <a href="#home"
+          class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">Get Started</a>
+        <a href="#contact"
+          class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
+          style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+        <a href="#resume"
+          class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
+          style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
+        <a href="#about"
+          class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
+          style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+      </div>
+      <div class="content-container w3-margin-top-2">
+        <!--HOME SECTION-->
+        <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+          <p style="font-style: italic; font-size:x-large;">"Be who you are and say what you feel, because those who
+            mind don’t matter, and those who matter don’t mind."</p>
+          <h1>Kanha Gupta</h1>
+          <h2 class="college">B.Tech Student (CSE)</h2>
+          <h2 class="college">JNCT College, Bhopal</h2>
+          <p></p>
+        </div>
+
+        <!--ABOUT SECTION-->
+        <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+          <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
+          <p class="w3-margin-top-2">
+            Hello friends. My name is <b><i>Kanha Gupta</i></b> and I'm from Katni, MP, (a city known for limestone). I
+            was born on 4th December 2002, in a middle-class family. From childhood, I was an average student. I have
+            done my primary schooling at Champions School, Katni. After 5th standard, I've decided to move to some CBSE
+            school & went to Saint Paul's Sr. Sec. School, Katni. I have spent my best 7 years at this school, i.e. from
+            2013 to 2020.
+          </p>
+          <p class="">
+            In 2018, after scoring 76% in class 10th, I've made a very tough decision of my life - taking the
+            Maths-Science stream for high schooling. In only one month, I understood that the journey will not be easy
+            for me. My 11th standard grades were not so impressive. But I worked a little harder and
+            however, scored 85.4% in class 12th. In 2020, there was a delay in CBSE board results, and we all know the
+            reason - <i>the corona virus</i>. Because of this, every college schedule and other competitive exams
+            dates were affected.
+          </p>
+          <p class="">
+            In November 2020, I have taken admission to Computer Science & Engineering at <b><i>JNCT College, RGPV
+                Technical University, Bhopal.</i></b> By seeing the Covid situation, we've prepared ourselves for online
+            classes. Our first online college class was conducted on 7th December 2020. That was the first time, I'm
+            experiencing an online class. For 3 months, I had seen my friends and teachers only in a zoom meeting. All
+            that was an unexpected situations but also a memorable part of my life.
+          </p>
+          <p class="">
+            In Covid-19 lockdown, I had a very empty time. And being a CSE student, I have decided to improve my coding
+            skills and started working towards it. I will not say that <i>I'm an expert,</i> but I'm confident enough to
+            say that <i>I'm good.</i>
+          </p>
+          <p class="">
+            <i>I always aims to reach my creative goals one step at a time and believes in doing everything with a
+              smile.</i>
+          </p>
+        </div>
+
+        <!--RESUME-->
+        <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+          <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
+          <div class="w3-container w3-margin-top-2 w3-cursive">
+
+            <!--EMPLOYMENT HISTORY SECTION-->
+            <h3 class="w3-border-amber">MY EMPLOYMENT HISTORY</h3>
+            <div class="">
+              <h4 class="mt-4">Campus Ambassador at TechLearn.</h4>
+              <p>January 2022 - February 2022</p>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>Promoted Live Online Sessions Of TechLearn In My College.</li>
+                <li>Solved Student's Queries.</li>
+                <li>Implemented Social Media Strategies To Increase Engagement & Followers For TechLearn.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!---EDUCATION SECTION-->
+          <div class="w3-container w3-margin-top-2 w3-cursive">
+            <h3 class="w3-border-amber">MY EDUCATION</h3>
+            <h4 class="mt-4">B.Tech (CSE), JNCT College, Bhopal</h4>
+            <p>June 2020 - Present </p>
+            <h4>High Schooling (Maths-Science Stream), Saint Paul's Sr. Sec. School (CBSE), Katni</h4>
+            <p>April 2018 - May 2020 </p>
+            <h4>Secondary Schooling, Saint Paul's Sr. Sec. School (CBSE), Katni</h4>
+            <p>April 2016 - March 2018 </p>
+            <h4>Primary Education, Champions School, Katni</h4>
+            <p>April 2008 - March 2013 </p>
+          </div>
+
+          <!--SKILLS SECTION-->
+          <div class="w3-container w3-margin-top-2 w3-cursive">
+            <h3 class="w3-border-amber">MY SKILLS</h3>
+            <!--SOFT SKILLS-->
+            <h4 class="mt-4">Soft skills</h4>
+            <ul class="w3-ul" style="font-weight: 500;">
+              <li>Affiliate & Digital Marketing.</li>
+              <li>Team Work, Leadership & Time Management.</li>
+              <li>Writing & Designing.</li>
+              <li>Intermediate Level Of Post Editing.</li>
+            </ul>
+            <!--TECHNICAL SKILLS-->
+            <h4 class="mt-4">Technical skills</h4>
+            <ul class="w3-ul" style="font-weight: 500;">
+              <li>I Have A Great Experience With MS Office Tools.</li>
+              <li>C, C++ & Python.</li>
+              <li>FrontEnd Web Development & PHP.</li>
+              <li>Data Structures.</li>
+              <li>Bootstrap - A CSS Framework.</li>
+            </ul>
+          </div>
+
+          <!--INTERESTS SECTION-->
+          <div class="w3-container w3-margin-top-2 w3-cursive">
+            <h3 class="w3-border-amber">MY HOBBIES AND INTERESTS</h3>
+            <ul class="w3-ul" style="font-weight: 500;">
+              <li>Playing Chess, Football & Cricket.</li>
+              <li>Writing, Reading Books & Watching Biopics.</li>
+              <li>Coding & Web Designing.</li>
+              <li>Blogging & Digital Marketing.</li>
+            </ul>
+          </div>
+
+          <!--REFERENCE SECTION-->
+          <div class="w3-container w3-margin-top-2 w3-cursive">
+            <h3 class="w3-border-amber">MY REFERENCES</h3>
+            <h4 class="mt-4">JNCT College, Bhopal</h4>
+            <ul class="w3-ul" style="font-weight: 500;">
+              <li>New Chouksey Nagar, Lambakheda, Bairasia Road, Bhopal - 462038</li>
+              <li>0755-6615600</li>
+              <li>contact@jnctbhopal.ac.in</li>
+            </ul>
+            <h4 class="mt-4">RGPV Technical University, Bhopal</h4>
+            <ul class="w3-ul" style="font-weight: 500;">
+              <li>Airport Bypass Road, Bhopal, Madhya Pradesh - 462033</li>
+              <li>0755-2734913</li>
+              <li>egov@rgtu.net</li>
+            </ul>
+            <h4 class="mt-4">TechLearn</h4>
+            <ul class="w3-ul" style="font-weight: 500;">
+              <li>Block A, SS Tech Park, PSR Prime Tower Unit-2 Ground Floor, Gachibowli, Hyderabad, Telangana - 500032</li>
+              <li>+91 9154796743</li>
+              <li>support@techlearn.live</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ACHIEVEMENTS -->
+        <div id="achieve" class="w3-container w3-margin-top-20-percent w3-cursive">
+          <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ACHIEVEMENTS</h2>
+          <img id="myImg" src="achievements/am.jpg" alt="Affilate Marketing, Tajana Grubisic (Instructor), UDEMY"
+            style="width:100%;max-width:300px">
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+          </div>
+          <img id="myImg1" src="achievements/c.jpg"
+            alt="Complete C Programming Course, Md. A. Barik (Instructor), UDEMY" style="width:100%;max-width:300px">
+
+          <!-- The Modal -->
+          <div id="myModal1" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close1">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img011">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption1"></div>
+          </div>
+          <img id="myImg2" src="achievements/dm.jpg" alt="Digital Marketing, GOOGLE Digital Garage"
+            style="width:100%;max-width:300px">
+
+          <!-- The Modal -->
+          <div id="myModal2" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close2">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img012">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption2"></div>
+          </div>
+          <img id="myImg3" src="achievements/fwd.jpg" alt="FrontEnd Web Development, YouAccel Training, UDEMY"
+            style="width:100%;max-width:300px">
+
+          <!-- The Modal -->
+          <div id="myModal3" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close3">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img013">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption3"></div>
+          </div>
+          <img id="myImg4" src="achievements/php.jpg" alt="PHP Course, YouAccel Training, UDEMY"
+            style="width:100%;max-width:300px">
+
+          <!-- The Modal -->
+          <div id="myModal4" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close4">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img014">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption4"></div>
+          </div>
+          <img id="myImg5" src="achievements/py.jpg"
+            alt="Python Crash Course, Authorized By Google & Offered Through Coursera"
+            style="width:100%;max-width:300px">
+
+          <!-- The Modal -->
+          <div id="myModal5" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close5">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img015">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption5"></div>
+          </div>
+        </div>
+
+        <div class="w3-container w3-margin-top-2 w3-cursive">
+          <h3 class="w3-border-amber mt-2">TECHLEARN'S ONLINE LIVE SESSIONS</h3>
+        <div class="techlearn mt-4">
+          <div class="row1">
+            <div class="columnt">
+              <img src="achievements/tf.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="columnt">
+              <img src="achievements/tn.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="columnt">
+              <img src="achievements/tsp.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="columnt">
+              <img src="achievements/tsw.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+          </div>
+          
+          <!-- The Modal/Lightbox -->
+          <div id="myModalt" class="modalt">
+            <span class="closet cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-contentt">
+              
+              <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="achievements/tfw.png" style="width:100%">
+              </div>
+              
+              <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="achievements/tnw.png" style="width:100%">
+              </div>
+              
+              <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="achievements/tspw.png" style="width:100%">
+              </div>
+              
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="achievements/tsww.png" style="width:100%">
+              </div>
+              
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+              <!-- Caption text -->
+              <div class="caption-containert">
+                <p id="captiont"></p>
+              </div>
+              
+              <!-- Thumbnail image controls -->
+              <div class="columnt">
+                <img class="demo cursor" src="achievements/tfw.png" style="width:100%" onclick="currentSlide(1)" alt="How Flipkart's Helping Small Business to Grow using NLP">
+              </div>
+              
+              <div class="columnt">
+                <img class="demo cursor" src="achievements/tnw.png" style="width:100%" onclick="currentSlide(2)" alt="Netflix Recommendation-How do they know what you like?">
+              </div>
+              
+              <div class="columnt">
+                <img class="demo cursor" src="achievements/tspw.png" style="width:100%" onclick="currentSlide(3)" alt="Python Machine Learning Project: SPAM classification in GMAIL">
+              </div>
+              
+              <div class="columnt">
+                <img class="demo cursor" src="achievements/tsww.png" style="width:100%" onclick="currentSlide(4)" alt="How Swiggy Chatbot Works?">
+              </div>
+            </div>
+          </div>
+        </div>
+          
+          <!--CONTACT SECTION-->
+      <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+        <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h2>
+        <div class="w3-margin-top-2" style="font-weight: 500;">
+          <p>Name: Kanha Gupta</p>
+          <p>Address (Hometown): Katni, MP, 483501</p>
+          <p>Address (Now): Indrapuri, Bhopal, MP, 462022</p>
+          <p>E-mail: kanhagupta412@gmail.com</p>
+        </div>
+      </div>
+
+      <hr>
+      <form action="https://formspree.io/f/mknyokgb" method="POST">
+        <h4 class="my-4 mx-auto" style="width: 146px; color: rgb(15, 0, 224); text-decoration: underline;">Get In Touch
+          </h3>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"><b>Email address</label></b></label>
+            <input type="email" name="email" required class="form-control" id="exampleFormControlInput1"
+              placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"><b>Your Message</b></label>
+            <textarea class="form-control" name="message" required id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+            <label class="form-check-label" for="exampleCheck1">I'm Not A Robot</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <!--FOOTER-->
+      <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+      <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+        <p>© 2022 - Kanha Gupta</p>
+        <!-- End footer -->
+      </footer>
+      <div class="contain mt-0">
+        <div class="links w3-padding-small mt-0">
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://github.com/Kanha412" target="_blank">
+            <i class="fa-brands fa-github fa-l" style="color: black;" onMouseOver="this.style.color='#ed7b00'"
+              onMouseOut="this.style.color='black'"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.instagram.com/kanhagupta412/"
+            target="_blank">
+            <i class="fa-brands fa-instagram fa-l" style="color: black;" onMouseOver="this.style.color='#ed7b00'"
+              onMouseOut="this.style.color='black'"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.hackerrank.com/kanhagupta412"
+            target="_blank">
+            <i class="fa-brands fa-hackerrank fa-l" style="color: black;" onMouseOver="this.style.color='#ed7b00'"
+              onMouseOut="this.style.color='black'"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://success-ingredients.blogspot.com/"
+            target="_blank">
+            <i class="fa-brands fa-blogger fa-l" style="color: black" onMouseOver="this.style.color='#ed7b00'"
+              onMouseOut="this.style.color='black'"></i>
+          </a>
+        </div>
+      </div>
+      <!--END OF CV SECTION-->
+    </section>
+  </section>
+
+  <script>
+    // Function to toggle mobile navigation
+    function toggleNavigation() {
+      let nav = document.getElementById("mobile-nav");
+      if (nav.classList.contains('w3-show')) {
+        nav.classList.remove('w3-show');
+      } else {
+        nav.classList.add('w3-show');
       }
-    </script>
-    <script>
-      // Script to load feather icons
-      feather.replace()
-    </script>
-    <script src="https://kit.fontawesome.com/111d40ad17.js" crossorigin="anonymous"></script>
-  </body>
+    }
+  </script>
+  <script>
+    // Script to load feather icons
+    feather.replace()
+  </script>
+  <script src="https://kit.fontawesome.com/111d40ad17.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

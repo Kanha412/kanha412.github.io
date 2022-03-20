@@ -7,4 +7,4 @@
 <li>Footer</li>
 <br>
 <br>
-<a href="https://kanha412.github.io/" target="_blank" style="text-decoration:none;"><i><b>Have A Look By Clicking Here</b></i></a>
+<a href="https://kanha412.github.io/" style="text-decoration:none;" target="_blank"><i><b>Have A Look By Clicking Here</b></i></a>

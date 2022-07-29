@@ -1,5 +1,5 @@
 <h1>My Complete Portfolio Website</h1>
-<li>My Online Profiles + Blog</li>
+<li>My Online Profiles</li>
 <li>About Me</li>
 <li>My Resume</li>
 <li>My Achievements</li>

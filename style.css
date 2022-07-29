@@ -217,13 +217,13 @@ body * {
     font-size: 21px;
   }
 
-  #myImg, #myImg1, #myImg2, #myImg3, #myImg4, #myImg5, #myImg0, #myImg6 {
+  #myImg, #myImg1, #myImg2, #myImg3, #myImg4, #myImg5, #myImg0, #myImg6, #myImg7 {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
   }
   
-  #myImg:hover, #myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover, #myImg0:hover, #myImg6:hover {
+  #myImg:hover, #myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover, #myImg0:hover, #myImg6:hover, #myImg7:hover{
     opacity: 0.7;
   }
   
@@ -245,7 +245,7 @@ body * {
 /* Modal Content (Image) */
 .modal-content {
   margin: auto;
-  display: block;
+  display: inline;
   width: 80%;
   max-width: 700px;
 }

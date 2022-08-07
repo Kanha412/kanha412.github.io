@@ -17,10 +17,13 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
+  <button onclick="topFunction()" id="myBtn0" title="Back To Top"><img src="image/back-to-top.png"></button>
   <section>
     <!-- MOBILE NAVIGATION -->
     <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
@@ -38,6 +41,8 @@
       <a href="#achieve"
         class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green"
         onclick="toggleNavigation()">ACHIEVEMENTS</a>
+        <a href="#project"
+        class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green">PROJECTS</a>
       <a href="#contact"
         class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green">CONTACT</a>
     </div>
@@ -84,6 +89,9 @@
         <a href="#contact"
           class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
           style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#project"
+          class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
+          style="border-width: 2px !important;" onclick="toggleNavigation()">PROJECTS</a>
           <a href="#achieve"
           class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
           style="border-width: 2px !important;" onclick="toggleNavigation()">ACHIEVEMENTS</a>
@@ -107,7 +115,7 @@
 
         <!--ABOUT SECTION-->
         <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-          <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
+          <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT ME</h2>
           <p class="w3-margin-top-2">
             Hello friends. My name is <b><i>Kanha Gupta</i></b> and I'm from Katni, MP, (a city known for limestone). I
             was born on 4th December 2002, in a middle-class family. From childhood, I was an average student. I have
@@ -143,7 +151,7 @@
 
         <!--RESUME-->
         <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
-          <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
+          <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY RESUME</h2>
           <div class="w3-container w3-margin-top-2 w3-cursive">
 
             <!--EMPLOYMENT HISTORY SECTION-->
@@ -231,7 +239,7 @@
 
         <!-- ACHIEVEMENTS -->
         <div id="achieve" class="w3-container w3-margin-top-20-percent w3-cursive">
-          <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ACHIEVEMENTS</h2>
+          <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY ACHIEVEMENTS</h2><br>
           <img id="myImg0" src="achievements/tic.png" alt="Campus Leader's Internship Certificate, TechLearn" style="width:49%;max-width:300px">
 
           <!-- The Modal -->
@@ -431,7 +439,59 @@
             </div>
           </div>
         </div>
-          
+          <br>
+      
+        <!-- Projects -->
+        <div id="project" class="w3-container w3-margin-top-20-percent w3-cursive">
+          <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY PROJECTS</h2>
+          <br>
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <a href="https://kanha412.github.io/Flipkart_Clone/" target="_blank" data-toggle="tooltip" data-placement="left" title="View Flipkart Clone Project"><img src="project/p1.png" class="d-block w-100" alt="Flipkart Clone Project"></a>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <a href="https://kanha412.github.io/Digital-Live-Clock/" target="_blank" data-toggle="tooltip" data-placement="left" title="View Digital Live Clock Project"><img src="project/p2.png" class="d-block w-100" alt="Digital Live Clock Project"></a>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <a href="https://kanha412.github.io/Quote_Of_The_Day/" target="_blank" data-toggle="tooltip" data-placement="left" title="View Quote Of The Day Project"><img src="project/p3.png" class="d-block w-100" alt="Quote Of The Day Project"></a>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <a href="https://kanha412.github.io/Spotify_Clone/" target="_blank" data-toggle="tooltip" data-placement="left" title="View Spotify Clone Project"><img src="project/p4.png" class="d-block w-100" alt="Spotify Clone Project"></a>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <a href="https://kanha412.github.io/Live_Analog_Clock/" target="_blank" data-toggle="tooltip" data-placement="left" title="View Live Analog Clock Project"><img src="project/p5.png" class="d-block w-100" alt="Live Analog Clock Project"></a>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <a href="https://kanha412.github.io/To-Do-List/" target="_blank" data-toggle="tooltip" data-placement="left" title="View To-Do List Project"><img src="project/p6.png" class="d-block w-100" alt="To-Do List Project"></a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="container" style="    
+          display: flex;  
+          justify-content: center;  
+          align-items: center; ">  
+            <a href="https://github.com/Kanha412?tab=repositories" target="_blank"><button type="button" class="btn btn-success w3-margin-top-2 ">View All Projects ....</button></a>
+            </div>
+        </div>
+<br>
+
           <!--CONTACT SECTION-->
       <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
         <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h2>
@@ -466,7 +526,7 @@
       <!--FOOTER-->
       <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
       <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
-        <p><span style="color:rgb(8, 95, 0)">Made With</span> 	<span style="color:red">&#10084;</span>&nbsp;&nbsp;<span style="color:rgb(5, 0, 80)"><i>By Kanha Gupta</i></span></p>
+        <p><span style="color:rgb(8, 95, 0)">Made With</span> 	<span style="color:rgb(255, 61, 61)">&#10084;</span>&nbsp;&nbsp;<span style="color:rgb(5, 0, 80)"><i>By Kanha Gupta</i></span></p>
         <!-- End footer -->
       </footer>
       <div class="contain mt-0">

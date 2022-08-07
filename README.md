@@ -3,6 +3,7 @@
 <li>About Me</li>
 <li>My Resume</li>
 <li>My Achievements</li>
+<li>My Projects</li>
 <li>Contact Me</li>
 <li>Footer</li>
 <br>

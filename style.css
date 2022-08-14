@@ -217,13 +217,13 @@ body * {
     font-size: 21px;
   }
 
-  #myImg, #myImg1, #myImg2, #myImg3, #myImg4, #myImg5, #myImg0, #myImg6, #myImg7 {
+  #myImg, #myImg1, #myImg2, #myImg3, #myImg4, #myImg5, #myImg0, #myImg6, #myImg7, #myImg8 {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
   }
   
-  #myImg:hover, #myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover, #myImg0:hover, #myImg6:hover, #myImg7:hover{
+  #myImg:hover, #myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover, #myImg0:hover, #myImg6:hover, #myImg7:hover, #myImg8:hover{
     opacity: 0.7;
   }
   
@@ -251,7 +251,7 @@ body * {
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption, #caption1, #caption2, #caption3, #caption4, #caption5, #caption0, #caption6 {
+#caption, #caption1, #caption2, #caption3, #caption4, #caption5, #caption0, #caption6,#caption7 {
   margin: auto;
   display: block;
   width: 80%;
@@ -263,7 +263,7 @@ body * {
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption, #caption1, #caption2, #caption3, #caption4, #caption5, #caption0, #caption6 {
+.modal-content, #caption, #caption1, #caption2, #caption3, #caption4, #caption5, #caption0, #caption6, #caption7 {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
@@ -274,7 +274,7 @@ body * {
 }
 
 /* The Close Button */
-.close, .close1,.close2,.close3,.close4,.close5, .close0, .close6 {
+.close, .close1,.close2,.close3,.close4,.close5, .close0, .close6, .close7 {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -292,7 +292,8 @@ body * {
 .close4:focus, .close5:hover,
 .close5:focus, .close0:hover,
 .close0:focus, .close6:hover,
-.close6:focus {
+.close6:focus, .close7:hover,
+.close7:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;

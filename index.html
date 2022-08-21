@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
   <!--Montserrat font-->
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -474,70 +475,85 @@
           <div id="project" class="w3-container w3-margin-top-20-percent w3-cursive">
             <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY PROJECTS</h2>
             <br>
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                  aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                  aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                  aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
-                  aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
-                  aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
-                  aria-label="Slide 6"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="5000">
-                  <a href="https://kanha412.github.io/Flipkart_Clone/" target="_blank" data-toggle="tooltip"
-                    data-placement="left" title="View Flipkart Clone Project"><img src="project/p1.png"
-                      class="d-block w-100" alt="Flipkart Clone Project"></a>
-                </div>
-                <div class="carousel-item" data-bs-interval="5000">
-                  <a href="https://kanha412.github.io/Digital-Live-Clock/" target="_blank" data-toggle="tooltip"
-                    data-placement="left" title="View Digital Live Clock Project"><img src="project/p2.png"
-                      class="d-block w-100" alt="Digital Live Clock Project"></a>
-                </div>
-                <div class="carousel-item" data-bs-interval="5000">
-                  <a href="https://kanha412.github.io/Quote_Of_The_Day/" target="_blank" data-toggle="tooltip"
-                    data-placement="left" title="View Quote Of The Day Project"><img src="project/p3.png"
-                      class="d-block w-100" alt="Quote Of The Day Project"></a>
-                </div>
-                <div class="carousel-item" data-bs-interval="5000">
-                  <a href="https://kanha412.github.io/Spotify_Clone/" target="_blank" data-toggle="tooltip"
-                    data-placement="left" title="View Spotify Clone Project"><img src="project/p4.png"
-                      class="d-block w-100" alt="Spotify Clone Project"></a>
-                </div>
-                <div class="carousel-item" data-bs-interval="5000">
-                  <a href="https://kanha412.github.io/Live_Analog_Clock/" target="_blank" data-toggle="tooltip"
-                    data-placement="left" title="View Live Analog Clock Project"><img src="project/p5.png"
-                      class="d-block w-100" alt="Live Analog Clock Project"></a>
-                </div>
-                <div class="carousel-item" data-bs-interval="5000">
-                  <a href="https://kanha412.github.io/To-Do-List/" target="_blank" data-toggle="tooltip"
-                    data-placement="left" title="View To-Do List Project"><img src="project/p6.png"
-                      class="d-block w-100" alt="To-Do List Project"></a>
+            <div class="row row-cols-1 row-cols-md-2 g-4 project">
+              <div class="col">
+                <div class="card">
+                  <img src="project/p1.png" class="card-img-top" alt="Flipkart Clone Project">
+                  <div class="card-body">
+                    <h5 class="card-title">Flipkart Clone Project</h5>
+                    <p class="card-text">A Simple Flipkart Clone Using Pure HTML and CSS. This Clone Is Fully Functional & Responsive.</p>
+                    <a class="btn btn-danger btn-sm" href="https://kanha412.github.io/Flipkart_Clone/" target="_blank" role="button">View</a>
+                  </div>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+              <div class="col">
+                <div class="card">
+                  <img src="project/p2.png" class="card-img-top" alt="Digital Live Clock Project">
+                  <div class="card-body">
+                    <h5 class="card-title">Digital Live Clock Project</h5>
+                    <p class="card-text">A Simple Digital Live Clock Using HTML , CSS and JavaScript. This Project Is Fully Functional & Responsive.</p>
+                    <a class="btn btn-danger btn-sm" href="https://kanha412.github.io/Digital-Live-Clock/" target="_blank" role="button">View</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="project/p3.png" class="card-img-top" alt="Quote Of The Day Project">
+                  <div class="card-body">
+                    <h5 class="card-title">Quote Of The Day Project</h5>
+                    <p class="card-text">A Beautiful Quote Of The Day Page Using HTML , CSS and JavaScript. This Page Is Fully Functional & Responsive.</p>
+                    <a class="btn btn-danger btn-sm" href="https://kanha412.github.io/Quote_Of_The_Day/" target="_blank" role="button">View</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="project/p4.png" class="card-img-top" alt="Spotify Clone Project">
+                  <div class="card-body">
+                    <h5 class="card-title">Spotify Clone Project</h5>
+                    <p class="card-text">A Simple Spotify Clone Using Pure HTML, CSS & JavaScript. This Clone Is Partially Functional & Responsive.</p>
+                    <a class="btn btn-danger btn-sm" href="https://kanha412.github.io/Spotify_Clone/" target="_blank" role="button">View</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="project/p5.png" class="card-img-top" alt="Live Analog Clock Project">
+                  <div class="card-body">
+                    <h5 class="card-title">Live Analog Clock Project</h5>
+                    <p class="card-text">An Attractive Live Analog Clock Using HTML , CSS and JavaScript. This Project Is Fully Functional & Responsive.</p>
+                    <a class="btn btn-danger btn-sm" href="https://kanha412.github.io/Live_Analog_Clock/" target="_blank" role="button">View</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="project/p6.png" class="card-img-top" alt="To-Do List Project">
+                  <div class="card-body">
+                    <h5 class="card-title">To-Do List Project</h5>
+                    <p class="card-text">A Complete To-Do List Project Using HTML , CSS and JavaScript. This Page Is Fully Functional & Responsive.</p>
+                    <a class="btn btn-danger btn-sm" href="https://kanha412.github.io/To-Do-List/" target="_blank" role="button">View</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="project/p7.png" class="card-img-top" alt="Brick Breaker Game">
+                  <div class="card-body">
+                    <h5 class="card-title">Brick Breaker Game</h5>
+                    <p class="card-text">A Simple Brick Breaker Game Using Pure HTML, CSS & JavaScript.
+                      This Game Is Fully Functional & Partially Responsive.</p>
+                    <a class="btn btn-danger btn-sm" href="https://kanha412.github.io/Brick_Breaker_Game/" target="_blank" role="button">View</a>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="container" style="    
           display: flex;  
           justify-content: center;  
           align-items: center; ">
               <a href="https://github.com/Kanha412?tab=repositories" target="_blank"><button type="button"
-                  class="btn btn-success w3-margin-top-2 ">View All Projects ....</button></a>
+                  class="btn btn-success w3-margin-top-2 btn-lg">View All Projects ....</button></a>
             </div>
           </div>
           <br>
@@ -577,9 +593,8 @@
           <!--FOOTER-->
           <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
           <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
-            <p><span style="color:rgb(8, 95, 0)">Made With</span> <span
-                style="color:rgb(255, 61, 61)">&#10084;</span>&nbsp;&nbsp;<span style="color:rgb(5, 0, 80)"><i>By Kanha
-                  Gupta</i></span></p>
+            <p><span style="color:rgb(3, 39, 0)">Made With</span> <span
+                style="color:rgb(255, 74, 74)">&#10084;</span>&nbsp;&nbsp;<span style="color:rgb(3, 0, 43)"><i>By Kanha Gupta</i></span></p>
             <!-- End footer -->
           </footer>
           <div class="contain mt-0">

@@ -133,6 +133,9 @@ body * {
     .home h1 {
       font-size: 48px;
     }
+    .contain a i{
+      font-size: 17px;
+    }
   }
   
   @media screen and (max-width: 600px) {
@@ -190,6 +193,9 @@ body * {
   
     .download-text {
       display: inline-block;
+    }
+    .contain a i{
+      font-size: 17px;
     }
   }
 
@@ -303,6 +309,9 @@ body * {
 @media only screen and (max-width: 700px){
   .modal-content {
     width: 100%;
+  }
+  .contain a i{
+    font-size: 17px;
   }
 }
 
@@ -441,11 +450,17 @@ body * {
   .numbertext {
     font-size: 8px;
   }
+  .contain a i{
+    font-size: 17px;
+  }
 }
 
 @media only screen and (max-width: 415px){
   .numbertext {
     font-size: 5px;
+  }
+  .contain a i{
+    font-size: 17px;
   }
 }
 
@@ -453,6 +468,9 @@ body * {
   .numbertext {
     font-size: 4px;
     padding-left: 6px;
+  }
+  .contain a i{
+    font-size: 15px;
   }
 }
 

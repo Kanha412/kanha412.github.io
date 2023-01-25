@@ -481,3 +481,8 @@ body * {
   background-color: rgb(225, 225, 225);
   opacity: 0.9;
 }
+
+.touch{
+  display: flex;
+  justify-content:center;
+}

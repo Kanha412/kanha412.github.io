@@ -56,7 +56,7 @@ body * {
   .icon-link {
     text-decoration: none;
     font-size: 48px auto;
-    padding: 26px;
+    padding: 18px;
   }
   
   .content-container {
@@ -134,7 +134,7 @@ body * {
       font-size: 48px;
     }
     .contain a i{
-      font-size: 17px;
+      font-size: 16px;
     }
   }
   
@@ -183,7 +183,7 @@ body * {
     }
   
     .icon-link {
-      font-size: 16px;
+      font-size: 13.5px;
     }
   
     .w3-container,
@@ -195,7 +195,7 @@ body * {
       display: inline-block;
     }
     .contain a i{
-      font-size: 17px;
+      font-size: 16px;
     }
   }
 
@@ -220,7 +220,7 @@ body * {
   }
 
   .contain a i{
-    font-size: 21px;
+    font-size: 20px;
   }
 
   #myImg, #myImg1, #myImg2, #myImg3, #myImg4, #myImg5, #myImg0, #myImg6, #myImg7, #myImg8,#myImg9,#myImg10,#myImg11,#myImg12 {
@@ -315,7 +315,7 @@ body * {
     width: 100%;
   }
   .contain a i{
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 
@@ -455,7 +455,7 @@ body * {
     font-size: 8px;
   }
   .contain a i{
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 
@@ -464,7 +464,7 @@ body * {
     font-size: 5px;
   }
   .contain a i{
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 
@@ -474,7 +474,7 @@ body * {
     padding-left: 6px;
   }
   .contain a i{
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 

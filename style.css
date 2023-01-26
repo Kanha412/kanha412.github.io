@@ -74,7 +74,7 @@ body * {
   }
   
   .home h1 {
-    font-size: 64px;
+    font-size: 66px;
   }
   
   .html {
@@ -131,10 +131,17 @@ body * {
       width: 100%;
     }
     .home h1 {
-      font-size: 48px;
+      font-size: 58px;
     }
   }
   
+  @media screen and (max-width: 675px) {
+    .home h1 {
+      font-size: 50px;
+    }
+  }
+
+
   @media screen and (max-width: 600px) {
     .content-container {
       width: 100% !important;
@@ -160,7 +167,7 @@ body * {
     }
   
     .home h1 {
-      font-size: 32px;
+      font-size: 45px;
     }
     .home h2 {
       font-size: 24px;
@@ -193,8 +200,18 @@ body * {
     }
   }
 
+  @media screen and (max-width: 308px) {
+    .home h1 {
+      font-size: 35px;
+    }
+    .home h2 {
+      font-size: 20px;
+    }
+  }
+
   h1{
     color: rgb(0, 0, 207);
+    text-shadow: 0px 0px 1.5px rgb(64, 64, 64), 0 0 1.5px rgb(51, 255, 0), 0 0 1.5px rgb(0, 8, 255);
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
   }
@@ -207,10 +224,32 @@ body * {
     color: green;
     text-decoration: underline;
   }
-
+  
   .college{
     color: rgb(17, 145, 0);
     font-weight: bold;
+    text-shadow: 0px 0px 1px rgb(65, 65, 65), 0 0 1px rgb(204, 188, 255), 0 0 1px rgb(11, 246, 246);
+  }
+
+  #words{
+    font-weight: bold;
+    font-style: oblique;
+    -webkit-animation: animatedBackground_b 5s linear infinite alternate;
+  }
+
+
+  @keyframes animatedBackground_b{
+    0% {color: #915206}
+    10% {color: #6c220d}
+    20% {color: #6e0b43}
+    30% {color: #8f0b0b}
+    40% {color: #7e0808}
+    50% {color: #981f6a}
+    60% {color: #b55519}
+    70% {color: #a00070}
+    80% {color: #83008f}
+    90% {color: #a7065e}
+    100% {color: #a10000}
   }
 
   #myImg, #myImg1, #myImg2, #myImg3, #myImg4, #myImg5, #myImg0, #myImg6, #myImg7, #myImg8,#myImg9,#myImg10,#myImg11,#myImg12 {
@@ -485,4 +524,35 @@ body * {
 .touch{
   display: flex;
   justify-content:center;
+}
+
+svg:hover{
+  fill: #FFBF00;
+}
+
+.animate-charcter
+{
+  background-image: linear-gradient(
+    -225deg,
+    #0d003c 0%,
+    #3d106d 35%,
+    #872948 75%,
+    #c8cb09 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }

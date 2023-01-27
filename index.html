@@ -33,7 +33,7 @@
   <section>
     <!-- MOBILE NAVIGATION -->
     <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
-      <a href="#home" class="w3-bar-item w3-button w3-hover-none">Get Started</a>
+      <a class="w3-bar-item w3-button w3-hover-none flipX" style="cursor:grab;">Total Views - <span id="count1"></span></a>
       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
         onclick="toggleNavigation()">&#9776;</a>
     </div>
@@ -102,8 +102,8 @@
       <!--DESKTOP NAVIGATION-->
       <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
 
-        <a href="#home"
-          class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">Get Started</a>
+        <a
+          class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green flipX" style="cursor:grab;">Total Views - <span id="count2"></span></a>
         <a href="#contact"
           class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
           style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
@@ -142,7 +142,7 @@
             With a score of 76.2% in 10th standard, I made the difficult decision in 2018 - to enroll in the <i>Math-Science</i> stream for high schooling. Within a month, I realized that the journey ahead would be challenging. Though my grades in 11th standard were not as impressive as I hoped, I worked harder and scored 84% in my 12th standard examinations. It is well known that the <i>Corona virus</i> caused the delay in CBSE board results in 2020. Due to this, colleges' schedules and competitive exam dates were impacted.
           </p>
           <p class="">
-            On November 2020, I was enrolled to the <b><i>LNCT Group of Colleges,</i></b> affiliated with <b><i>RGPV University</i></b> in Bhopal, for <i>Computer Science and Engineering.</i> The pandemic situation has prepared me for online classes, and my first experience with one was on <i>December 7th,</i> 2020. For three months, I only saw my friends and teachers through Zoom meetings, which was unexpected but also memorable.
+            On November 2020, I was enrolled in the <b><i>LNCT Group of Colleges,</i></b> affiliated with <b><i>RGPV University</i></b> in Bhopal, for <i>Computer Science and Engineering.</i> The pandemic situation has prepared me for online classes, and my first experience with one was on <i>December 7th,</i> 2020. For three months, I only saw my friends and teachers through Zoom meetings, which was unexpected but also memorable.
           </p>
           <p class="">
             During the Covid-19 pandemic, I had a significant amount of free time. And being a CSE student, I have decided to enhance my coding skills and have begun working towards it. I may not be an expert yet, but I am confident in my abilities.
@@ -650,7 +650,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-12 text-center">
-                  <p class="animate-charcter">Made With ❤ &nbsp;<i>By Kanha Gupta</i></p>
+                  <p class="animate-charcter">Created With ❤ &nbsp;<i>By Kanha Gupta</i></p>
                 </div>
               </div>
             </div>
@@ -686,6 +686,21 @@
         }); }, 3000)
     })();
   </script>
+  <script type="text/javascript">
+    const countEl = document.getElementById('count1');
+    const countE2 = document.getElementById('count2');
+    updateVisitCount();
+
+    function updateVisitCount() {
+        fetch('https://api.countapi.xyz/update/kanha/portfolio/?amount=1')
+            .then(res => res.json())
+            .then(res => {
+                countEl.innerHTML = res.value;
+                countE2.innerHTML = res.value;
+            })
+    }
+
+</script>
 </body>
 
 </html>

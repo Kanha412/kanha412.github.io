@@ -1,4 +1,5 @@
 <h1>My Complete Portfolio Website</h1>
+<li>Total Views Count</li>
 <li>My Online Profiles</li>
 <li>About Me</li>
 <li>My Resume</li>

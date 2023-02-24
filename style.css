@@ -234,7 +234,7 @@ body * {
   #words{
     font-weight: bold;
     font-style: oblique;
-    -webkit-animation: animatedBackground_b 5s linear infinite alternate;
+    animation: animatedBackground_b 5s linear infinite alternate;
   }
 
 
@@ -532,7 +532,7 @@ svg:hover{
 
 .animate-charcter
 {
-  font-weight: 400;
+  font-weight: 410;
   background-image: linear-gradient(
     -225deg,
     #0a002c 0%,
@@ -545,7 +545,6 @@ svg:hover{
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
@@ -572,7 +571,6 @@ svg:hover{
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;

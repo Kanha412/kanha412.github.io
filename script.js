@@ -363,7 +363,7 @@ function scrollFunction() {
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   if(window.matchMedia("(max-width:600px)").matches){
-  $("html, body").animate({ scrollTop: 0 }, 800);
+  $("html, body").animate({ scrollTop: 0 }, 10);
   }
   else{
   $("html, body").animate({ scrollTop: 0 }, 1200);
@@ -396,7 +396,7 @@ $(document).ready(function(){
       if(window.matchMedia("(max-width:600px)").matches){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
+      }, 10, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;

@@ -600,3 +600,14 @@ svg:hover{
     transform: rotateX(720deg);
   }
 }
+
+@media screen and (min-width: 601px) and (max-width: 1100px) {
+  .download{
+    width: 68px;
+  }
+}
+@media screen and (max-width: 252px) {
+  .download{
+    width: 68px;
+  }
+}

@@ -362,7 +362,12 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
+  if(window.matchMedia("(max-width:600px)").matches){
+  $("html, body").animate({ scrollTop: 0 }, 800);
+  }
+  else{
   $("html, body").animate({ scrollTop: 0 }, 1200);
+  }
 }
 
 window.onbeforeunload = () => {
@@ -374,35 +379,47 @@ window.onbeforeunload = () => {
 
 
 // Smooth Scrolling
-// $(document).ready(function(){
-//   // Add smooth scrolling to all links
-//   $("a").on('click', function(event) {
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-//     // Make sure this.hash has a value before overriding default behavior
-//     if (this.hash !== "") {
-//       // Prevent default anchor click behavior
-//       event.preventDefault();
-
-//       // Store hash
-//       var hash = this.hash;
-
-//       // Using jQuery's animate() method to add smooth page scroll
-//       // The optional number (1700) specifies the number of milliseconds it takes to scroll to the specified area
-//       $('html, body').animate({
-//         scrollTop: $(hash).offset().top
-//       }, 1700, function(){
-   
-//         // Add hash (#) to URL when done scrolling (default click behavior)
-//         window.location.hash = hash;
-//       });
-//     } // End if
-//   });
-// });
-$(document).ready(function() {
-  $("a").click(function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
       event.preventDefault();
-      $("html, body").animate({
-          scrollTop: $($(this).attr("href")).offset().top
-        }, 1700);
-    });
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800,1700) specifies the number of milliseconds it takes to scroll to the specified area
+      if(window.matchMedia("(max-width:600px)").matches){
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }
+    else
+    {
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1700, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }
+    } // End if
+  });
 });
+// $(document).ready(function() {
+//   $("a").click(function(event) {
+//       event.preventDefault();
+//       $("html, body").animate({
+//           scrollTop: $($(this).attr("href")).offset().top
+//         }, 1700);
+//     });
+// });

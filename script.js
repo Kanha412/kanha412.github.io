@@ -415,41 +415,33 @@ window.onbeforeunload = () => {
 
 ScrollReveal({
   reset: true,
-  distance: '85px',
   duration: 2200,
   delay: 200
 });
 
-
-
-ScrollReveal().reveal('.reveal', { origin: 'top' });
-ScrollReveal().reveal('.reveal2', { origin: 'left' });
-ScrollReveal().reveal('.reveal3', { origin: 'right' });
-ScrollReveal().reveal('.reveal4', { origin: 'bottom' });
-
-ScrollReveal().reveal('.navscroll', {
-  origin: 'bottom', reset: true, distance: '70px', duration: 1000, delay: 50
-});
-
-
-function adjustBehavior() {
-  var screenWidth = window.innerWidth;
-
-  if (screenWidth <= 600) {
-    // Adjust behavior for smaller screens
-    ScrollReveal().reveal('.fix', { origin: 'top', distance: '70px'});
-    ScrollReveal().reveal('.fix2', { origin: 'left', distance: '70px'});
-    ScrollReveal().reveal('.fix3', { origin: 'right', distance: '70px'});
-    ScrollReveal().reveal('.fix4', { origin: 'bottom', distance: '70px'});
-  } else {
-    // Adjust behavior for larger screens
-    ScrollReveal().reveal('.fix', { origin: 'top', reset: false });
-    ScrollReveal().reveal('.fix2', { origin: 'left', reset: false });
-    ScrollReveal().reveal('.fix3', { origin: 'right', reset: false });
-    ScrollReveal().reveal('.fix4', { origin: 'bottom', reset: false });
+var width = window.innerWidth;
+var scrollPosition = window.scrollY || window.pageYOffset;
+if (width > 600) {
+  ScrollReveal().reveal('.navscroll', { origin: 'bottom', reset: true, distance: '70px', duration: 1000, delay: 50, });
+  if (scrollPosition < 20) {
+    ScrollReveal().reveal('.fix', { origin: 'top', reset: false, distance: '80px', duration: 2200, delay: 150 });
+    ScrollReveal().reveal('.fix2', { origin: 'left', reset: false, distance: '80px', duration: 2200, delay: 150 });
+    ScrollReveal().reveal('.fix3', { origin: 'right', reset: false, distance: '80px', duration: 2200, delay: 150 });
+    ScrollReveal().reveal('.fix4', { origin: 'bottom', reset: false, distance: '80px', duration: 2200, delay: 150 });
   }
+  ScrollReveal().reveal('.reveal', { origin: 'top', distance: '80px', duration: 2200, delay: 150 });
+  ScrollReveal().reveal('.reveal2', { origin: 'left', distance: '80px', duration: 2200, delay: 150 });
+  ScrollReveal().reveal('.reveal3', { origin: 'right', distance: '80px', duration: 2200, delay: 150 });
+  ScrollReveal().reveal('.reveal4', { origin: 'bottom', distance: '80px', duration: 2200, delay: 150 });
 }
-
-// Call the function on initial load and whenever the window is resized
-window.addEventListener("load", adjustBehavior);
-window.addEventListener("resize", adjustBehavior);
+else
+{
+  ScrollReveal().reveal('.fix', { origin: 'top', distance: '20px', duration: 2700, delay: 170 });
+    ScrollReveal().reveal('.fix2', { origin: 'left', distance: '2px', duration: 2700, delay: 170 });
+    ScrollReveal().reveal('.fix3', { origin: 'right', distance: '2px', duration: 2700, delay: 170 });
+    ScrollReveal().reveal('.fix4', { origin: 'bottom', distance: '20px', duration: 2700, delay: 170 });
+    ScrollReveal().reveal('.reveal', { origin: 'top', distance: '20px', duration: 2700, delay: 170 });
+  ScrollReveal().reveal('.reveal2', { origin: 'left', distance: '2px', duration: 2700, delay: 170 });
+  ScrollReveal().reveal('.reveal3', { origin: 'right', distance: '2px', duration: 2700, delay: 170 });
+  ScrollReveal().reveal('.reveal4', { origin: 'bottom', distance: '28px', duration: 2700, delay: 780 });
+}

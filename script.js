@@ -406,66 +406,50 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  if(window.matchMedia("(max-width:600px)").matches){
-  $("html, body").animate({ scrollTop: 0 }, 10);
-  }
-  else{
-  $("html, body").animate({ scrollTop: 0 }, 1200);
-  }
-}
-
 window.onbeforeunload = () => {
-  for(const form of document.getElementsByTagName('form')) {
+  for (const form of document.getElementsByTagName('form')) {
     form.reset();
   }
 }
 
 
-
-// Smooth Scrolling
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800,1700) specifies the number of milliseconds it takes to scroll to the specified area
-      if(window.matchMedia("(max-width:600px)").matches){
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 10, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    }
-    else
-    {
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 1700, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    }
-    } // End if
-  });
+ScrollReveal({
+  reset: true,
+  distance: '85px',
+  duration: 2200,
+  delay: 200
 });
-// $(document).ready(function() {
-//   $("a").click(function(event) {
-//       event.preventDefault();
-//       $("html, body").animate({
-//           scrollTop: $($(this).attr("href")).offset().top
-//         }, 1700);
-//     });
-// });
+
+
+
+ScrollReveal().reveal('.reveal', { origin: 'top' });
+ScrollReveal().reveal('.reveal2', { origin: 'left' });
+ScrollReveal().reveal('.reveal3', { origin: 'right' });
+ScrollReveal().reveal('.reveal4', { origin: 'bottom' });
+
+ScrollReveal().reveal('.navscroll', {
+  origin: 'bottom', reset: true, distance: '70px', duration: 1000, delay: 50
+});
+
+
+function adjustBehavior() {
+  var screenWidth = window.innerWidth;
+
+  if (screenWidth <= 600) {
+    // Adjust behavior for smaller screens
+    ScrollReveal().reveal('.fix', { origin: 'top', distance: '70px'});
+    ScrollReveal().reveal('.fix2', { origin: 'left', distance: '70px'});
+    ScrollReveal().reveal('.fix3', { origin: 'right', distance: '70px'});
+    ScrollReveal().reveal('.fix4', { origin: 'bottom', distance: '70px'});
+  } else {
+    // Adjust behavior for larger screens
+    ScrollReveal().reveal('.fix', { origin: 'top', reset: false });
+    ScrollReveal().reveal('.fix2', { origin: 'left', reset: false });
+    ScrollReveal().reveal('.fix3', { origin: 'right', reset: false });
+    ScrollReveal().reveal('.fix4', { origin: 'bottom', reset: false });
+  }
+}
+
+// Call the function on initial load and whenever the window is resized
+window.addEventListener("load", adjustBehavior);
+window.addEventListener("resize", adjustBehavior);

@@ -436,12 +436,12 @@ if (width > 600) {
 }
 else
 {
-  ScrollReveal().reveal('.fix', { origin: 'top', distance: '20px', duration: 2200, delay: 150 });
-    ScrollReveal().reveal('.fix2', { origin: 'left', distance: '2px', duration: 2200, delay: 150 });
-    ScrollReveal().reveal('.fix3', { origin: 'right', distance: '2px', duration: 2200, delay: 150 });
-    ScrollReveal().reveal('.fix4', { origin: 'bottom', distance: '20px', duration: 2200, delay: 150 });
-    ScrollReveal().reveal('.reveal', { origin: 'top', distance: '20px', duration: 2200, delay: 150 });
-  ScrollReveal().reveal('.reveal2', { origin: 'left', distance: '2px', duration: 2200, delay: 150 });
-  ScrollReveal().reveal('.reveal3', { origin: 'right', distance: '2px', duration: 2200, delay: 150 });
-  ScrollReveal().reveal('.reveal4', { origin: 'bottom', distance: '28px', duration: 2200, delay: 150 });
+  ScrollReveal().reveal('.fix', { origin: 'top', distance: '20px', duration: 2000, delay: 120 });
+    ScrollReveal().reveal('.fix2', { origin: 'left', distance: '2px', duration: 2000, delay: 120 });
+    ScrollReveal().reveal('.fix3', { origin: 'right', distance: '2px', duration: 2000, delay: 120 });
+    ScrollReveal().reveal('.fix4', { origin: 'bottom', distance: '20px', duration: 2000, delay: 120 });
+    ScrollReveal().reveal('.reveal', { origin: 'top', distance: '20px', duration: 2000, delay: 120 });
+  ScrollReveal().reveal('.reveal2', { origin: 'left', distance: '2px', duration: 2000, delay: 120 });
+  ScrollReveal().reveal('.reveal3', { origin: 'right', distance: '2px', duration: 2000, delay: 120 });
+  ScrollReveal().reveal('.reveal4', { origin: 'bottom', distance: '20px', duration: 2000, delay: 120 });
 }

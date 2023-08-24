@@ -120,28 +120,32 @@ body {
 }
 
 .butn{
-    display: inline-block;
-    padding: 0.8em 2em;
-    text-decoration: none;
-    border-radius: 50px;
-    cursor: pointer;
-    outline: none;
-    margin-top: 1em;
-    font-weight: 400;
-  border: 0;
-  background: #dff4fe;
-  box-shadow: 0 5px 0 #c5eafe;
-  color: #002b82;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 50px;
   cursor: pointer;
-  font: inherit;
-  margin: 0;
-  outline: 0;
-  padding: 8px 15px;
-  transition: all .1s linear;
+  outline: none;
+  margin-top: 1em;
+  font-weight: 400;
+border: 0;
+background: #dff4fe;
+box-shadow: 0 5px 0 #c5eafe;
+color: rgb(9, 0, 129);
+cursor: pointer;
+font: inherit;
+margin: 0;
+outline: 0;
+padding: 8px 15px;
+transition: all .2s linear;
 }
 .butn:active {
-    box-shadow: 0 3px 0 #a0e3ff;
-    transform: translateY(3px);
+  box-shadow: 0 3px 0 #a0e3ff;
+  transform: translateY(3px);
+}
+
+.under{
+  display: inline-block;
+  padding-bottom: 6px;
 }
 
 @keyframes spin {

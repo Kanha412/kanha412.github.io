@@ -433,6 +433,7 @@ if (width > 600) {
   ScrollReveal().reveal('.reveal2', { origin: 'left', distance: '80px', duration: 2200, delay: 150 });
   ScrollReveal().reveal('.reveal3', { origin: 'right', distance: '80px', duration: 2200, delay: 150 });
   ScrollReveal().reveal('.reveal4', { origin: 'bottom', distance: '80px', duration: 2200, delay: 150 });
+  ScrollReveal().reveal('.send', { origin: 'right', distance: '80px', duration: 2200, delay: 150 });
 }
 else
 {
@@ -444,4 +445,5 @@ else
   ScrollReveal().reveal('.reveal2', { origin: 'left', distance: '2px', duration: 1800, delay: 90 });
   ScrollReveal().reveal('.reveal3', { origin: 'right', distance: '2px', duration: 1800, delay: 90 });
   ScrollReveal().reveal('.reveal4', { origin: 'bottom', distance: '20px', duration: 1800, delay: 90 });
+  ScrollReveal().reveal('.send', { origin: 'bottom', distance: '20px', duration: 1800, delay: 90 });
 }

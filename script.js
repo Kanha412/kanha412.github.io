@@ -422,7 +422,6 @@ ScrollReveal({
 var width = window.innerWidth;
 var scrollPosition = window.scrollY || window.pageYOffset;
 if (width > 600) {
-  ScrollReveal().reveal('.navscroll', { origin: 'bottom', reset: true, distance: '70px', duration: 1000, delay: 50, });
   if (scrollPosition < 20) {
     ScrollReveal().reveal('.fix', { origin: 'top', reset: false, distance: '80px', duration: 2200, delay: 150 });
     ScrollReveal().reveal('.fix2', { origin: 'left', reset: false, distance: '80px', duration: 2200, delay: 150 });

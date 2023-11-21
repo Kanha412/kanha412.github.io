@@ -101,9 +101,9 @@ body {
 
   .nav-a{
     --b: 0.1em;   /* the thickness of the line */
-    --c: #151f65;
+    --c: #00203FFF;
     text-decoration: none;
-    color: #6b73ac;
+    color: #7d89e0;
     padding-block: var(--b);
     background: linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%, linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
     -webkit-background-clip: text,padding-box;

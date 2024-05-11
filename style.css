@@ -252,13 +252,13 @@ body * {
     100% {color: #a10000}
   }
 
-  #myImg, #myImg1, #myImg2, #myImg3, #myImg4, #myImg5, #myImg0, #myImg6, #myImg7, #myImg8,#myImg9,#myImg10,#myImg11,#myImg12, #myImg13, #myImg14 {
+  #myImg, #myImg1, #myImg2, #myImg3, #myImg4, #myImg5, #myImg0, #myImg6, #myImg7, #myImg8,#myImg9,#myImg10,#myImg11,#myImg12, #myImg13, #myImg14, #myImg15, #myImg16, #myImg17 {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
   }
   
-  #myImg:hover, #myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover, #myImg0:hover, #myImg6:hover, #myImg7:hover, #myImg8:hover,#myImg9:hover,#myImg10:hover, #myImg11:hover, #myImg12:hover, #myImg13:hover, #myImg14:hover{
+  #myImg:hover, #myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover, #myImg0:hover, #myImg6:hover, #myImg7:hover, #myImg8:hover,#myImg9:hover,#myImg10:hover, #myImg11:hover, #myImg12:hover, #myImg13:hover, #myImg14:hover, #myImg15:hover, #myImg16:hover,#myImg17:hover{
     opacity: 0.7;
   }
   
@@ -286,7 +286,7 @@ body * {
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption, #caption1, #caption2, #caption3, #caption4, #caption5, #caption0, #caption6,#caption7,#caption8,#caption9,#caption10,#caption11,#caption12,#caption13 {
+#caption, #caption1, #caption2, #caption3, #caption4, #caption5, #caption0, #caption6,#caption7,#caption8,#caption9,#caption10,#caption11,#caption12,#caption13,#caption14,#caption15,#caption16{
   margin: auto;
   display: block;
   width: 80%;
@@ -298,7 +298,7 @@ body * {
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption, #caption1, #caption2, #caption3, #caption4, #caption5, #caption0, #caption6, #caption7,#caption8,#caption9,#caption10,#caption11,#caption12,#caption13 {
+.modal-content, #caption, #caption1, #caption2, #caption3, #caption4, #caption5, #caption0, #caption6, #caption7,#caption8,#caption9,#caption10,#caption11,#caption12,#caption13, #caption14, #caption15, #caption16{
   animation-name: zoom;
   animation-duration: 0.6s;
 }
@@ -309,7 +309,7 @@ body * {
 }
 
 /* The Close Button */
-.close, .close1,.close2,.close3,.close4,.close5, .close0, .close6, .close7,.close8,.close9,.close10,.close11,.close12,.close13 {
+.close, .close1,.close2,.close3,.close4,.close5, .close0, .close6, .close7,.close8,.close9,.close10,.close11,.close12,.close13,.close14,.close15,.close16 {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -334,7 +334,10 @@ body * {
 .close10:hover,.close10:focus,
 .close11:hover,.close11:focus,
 .close12:hover,.close12:focus,
-.close13:hover,.close13:focus {
+.close13:hover,.close13:focus,
+.close14:hover,.close14:focus,
+.close15:hover,.close15:focus,
+.close16:hover,.close16:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
